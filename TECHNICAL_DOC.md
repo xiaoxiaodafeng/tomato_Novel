@@ -23,6 +23,10 @@ This repo contains a practical toolkit to:
 - `decode_book_list_from_pages.js`
   - Reads API result and rewrites readable fields from detail pages.
 
+- `batch_crawl_by_page.py`
+  - Batch crawler by `page_index` range.
+  - Saves per-page raw JSON and merged list with `__page_index`.
+
 - `inspect_page.js`
   - Quick page debug utility.
 
@@ -80,6 +84,18 @@ python fanqie_execjs_client.py --insecure "https://fanqienovel.com/api/author/li
 node decode_book_list_from_pages.js book_list_response.json book_list_decoded.json
 ```
 
+### 4) Batch crawl by page index
+
+```bash
+python batch_crawl_by_page.py --page-start 0 --page-end 9 --page-count 18 --insecure --out-dir runs/page_0_9
+```
+
+Output files:
+
+- `runs/page_0_9/raw_pages/page_{index}.json`
+- `runs/page_0_9/merged_book_list.json`
+- `runs/page_0_9/crawl_summary.json`
+
 ---
 
 ## Notes
@@ -87,4 +103,3 @@ node decode_book_list_from_pages.js book_list_response.json book_list_decoded.js
 - `book_list` fields may contain private-use Unicode obfuscation.
 - The decoder script fixes this by pulling canonical values from `/page/{book_id}`.
 - Use only on authorized targets.
-
