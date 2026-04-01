@@ -10,6 +10,12 @@
 
 ## 快速使用
 
+### 安装 Python 依赖
+
+```bash
+python -m pip install -r requirements.txt
+```
+
 ### Node.js 请求示例
 
 ```bash

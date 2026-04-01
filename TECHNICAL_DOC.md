@@ -21,6 +21,18 @@
 - Node.js >= 18
 - Python >= 3.9
 
+## 依赖安装
+
+```bash
+python -m pip install -r requirements.txt
+```
+
+Python 第三方库：
+
+- `PyExecJS`
+- `requests`
+- `urllib3`
+
 ## 常用命令
 
 ### Node.js 请求
