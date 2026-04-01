@@ -11,10 +11,12 @@
 ## 主要文件
 
 - `fanqie_api_client.js`：Node.js 请求客户端。
+- `fanqie_reverse_flow.js`：完整 JS 逆向流程类封装（签名 + 请求 + 解码）。
 - `fanqie_execjs_client.py`：Python + ExecJS 请求客户端。
 - `decode_book_list_from_pages.js`：详情页回填与解码脚本。
 - `batch_crawl_by_page.py`：按页批量抓取与汇总脚本。
 - `inspect_page.js`：页面调试辅助脚本。
+- `JS_REVERSE_FLOW.md`：整份 JS 逆向流程文档。
 
 ## 运行环境
 

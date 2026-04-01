@@ -37,4 +37,5 @@ python batch_crawl_by_page.py --page-start 0 --page-end 9 --page-count 18 --inse
 ## 说明
 
 - 详细技术说明请查看 `TECHNICAL_DOC.md`。
+- 完整 JS 逆向流程与类封装请查看 `JS_REVERSE_FLOW.md`。
 - 请仅在你已授权的目标上使用本工具。
