@@ -1,4 +1,0 @@
-requests>=2.31.0
-PyExecJS>=1.5.1
-urllib3>=2.0.0
-fonttools>=4.62.1
